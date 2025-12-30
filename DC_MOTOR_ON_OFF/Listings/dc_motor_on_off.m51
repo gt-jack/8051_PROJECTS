@@ -1,0 +1,79 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    12/20/2025  10:43:42  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\dc_motor_on_off.obj TO .\Objects\dc_motor_on_off PRINT (.\Listings\dc_motor_on_off
+>> .m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\dc_motor_on_off.obj (DC_MOTOR_ON_OFF)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\dc_motor_on_off (DC_MOTOR_ON_OFF)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     000DH     UNIT         ?PR?MAIN?DC_MOTOR_ON_OFF
+            CODE    080DH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\dc_motor_on_off (DC_MOTOR_ON_OFF)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?DC_MOTOR_ON_OFF
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\dc_motor_on_off (DC_MOTOR_ON_OFF)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DC_MOTOR_ON_OFF
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  B:0090H.0       PUBLIC        MOTOR
+  C:0800H         PUBLIC        main
+  B:00B0H.2       PUBLIC        SW
+  -------         PROC          MAIN
+  C:0800H         LINE#         6
+  C:0800H         LINE#         7
+  C:0800H         LINE#         8
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  12/20/2025  10:43:42  PAGE 2
+
+
+  C:0802H         LINE#         10
+  C:0802H         LINE#         11
+  C:0802H         LINE#         12
+  C:0805H         LINE#         13
+  C:0809H         LINE#         15
+  C:080BH         LINE#         16
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        DC_MOTOR_ON_OFF
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000DH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=28
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
