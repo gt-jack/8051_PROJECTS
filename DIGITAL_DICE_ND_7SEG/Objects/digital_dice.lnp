@@ -1,0 +1,3 @@
+".\Objects\digital_dice.obj" 
+TO ".\Objects\digital_dice" 
+PRINT(".\Listings\digital_dice.m51")
