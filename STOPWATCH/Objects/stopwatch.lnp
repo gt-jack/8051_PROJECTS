@@ -1,0 +1,3 @@
+".\Objects\stopwatch.obj" 
+TO ".\Objects\stopwatch" 
+PRINT(".\Listings\stopwatch.m51")
